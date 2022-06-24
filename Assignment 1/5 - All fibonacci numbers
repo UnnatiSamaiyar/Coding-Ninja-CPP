@@ -1,0 +1,23 @@
+//All fibonacci numbers
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	int n1=0, n2=1, N, n3;
+	cin>>N;
+	cout<<"N:"<<N;
+	cout<<endl;
+	cout<<"All numbers between 1 to N: ";
+	for(int i=0; i<=N; i++){
+		cout<<i<<" ";
+	}
+	cout<<endl;
+	cout<<"Fibonacci series ";
+	for(int j=0; j<N; ++j){
+		n3 = n1 + n2;
+		cout<<n3<<" ";
+		n1 = n2;
+		n2 = n3;
+	}
+}
