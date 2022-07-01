@@ -1,0 +1,41 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    //Basic Salary
+    double basic_salary;
+    cin>>basic_salary;
+    
+    //Grade
+    char grade;
+    cin>>grade;
+    
+    //HRA
+    double hra;
+    hra = 0.2 * basic_salary;
+    
+    //DA
+    double da;
+    da = 0.5 * basic_salary;
+    
+    //PF
+    double pf;
+    pf = 0.11 * basic_salary;
+    
+    //Grade Conditions
+    int allow;
+    if(grade == 'A'){
+        allow = 1700;
+    }
+    else if(grade == 'B'){
+        allow = 1500;
+    }
+    else{
+        allow = 1300;
+    }
+    
+    //Total Salary
+    double total_salary;
+    total_salary = basic_salary + hra + da + allow - pf;
+    cout<<round(total_salary);
+}
