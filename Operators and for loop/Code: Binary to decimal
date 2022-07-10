@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int N;
+    cin>>N;
+    int base=0;
+    int decimal=0;
+    while(N>0){
+        decimal += (N%10) * pow(2,base);
+        base++;
+        N/=10;
+    }
+    cout<<decimal;
+}
