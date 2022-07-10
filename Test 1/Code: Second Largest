@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+    int max=INT_MIN;
+    int secondmax=INT_MIN;
+    
+    while(n--){
+        int i;
+        cin>>i;
+        if(i>max){
+            secondmax=max;
+            max=i;
+        }
+        else if(i>secondmax && i<max){
+            secondmax=i;
+        }
+    }
+    cout<<secondmax;
+}
