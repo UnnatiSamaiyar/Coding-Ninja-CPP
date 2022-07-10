@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    char ch;
+    cin.get(ch);
+    int character=0, digits=0, spaces=0;
+    while(ch!='$'){
+        if((ch>='a' && ch<='z') || ch>='A' && ch<='Z'){
+            character++;
+        }
+        else if(ch>='0' && ch<='9'){
+            digits++;
+        }
+        else{
+            spaces++;
+        }
+        cin.get(ch);
+    }
+    cout<<character<<" "<<digits<<" "<<spaces;
+}
