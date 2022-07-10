@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+    int x,y;
+    cin>>x;
+    int count=2;
+    bool isDec=true;
+    while(count<=n){
+        cin>>y;
+        if(y==x){
+            cout<<"false";
+            return 0;
+        }
+        if(x>y){
+            if(!isDec){
+                cout<<"false";
+                return 0;
+            }
+        }
+        else{
+            if(isDec){
+                isDec=false;
+            }
+        }
+        count++;
+    }
+    cout<<"true";
+    return 0;
+}
