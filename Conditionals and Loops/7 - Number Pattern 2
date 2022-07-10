@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+    
+    for(int i=1; i<=n; i++){
+        int m=1;
+        for(int k=n; k-i>0; k--){
+            cout<<" ";
+        }
+        for(int j=i; m<=i; m++, j++){
+            cout<<j;
+        }
+        cout<<endl;
+    }
+}
