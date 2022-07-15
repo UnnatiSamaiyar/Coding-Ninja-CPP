@@ -1,0 +1,10 @@
+void printTable(int start, int end, int step) {
+    while(start<=end){
+        int fahrenheit = (5.0/9)*(start-32);
+        cout<<start<<" "<<fahrenheit<<endl;
+        start+=step;
+    }
+    
+}
+
+
